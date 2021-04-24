@@ -1,0 +1,30 @@
+readonly BaseURL=https://<company>.atlassian.net
+readonly Email=<email>
+readonly APIToken=<token>
+readonly Template="$(cat <<EOF
+{
+  "fields":{
+    "project":{
+      "key": "<project>"
+    },
+    "summary":  "TITLE",
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    "issuetype": {"name": "Story"}
+  }
+}
+EOF
+)"
