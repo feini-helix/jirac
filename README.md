@@ -1,5 +1,5 @@
 # jirac
-a tiny tool to help create Jira.
+A tiny tool to help creating Jiras.
 
 In some condition, we need create a lot of Jira stories as placeholder and just put its title there, so that we can fill in other fields later.
 
